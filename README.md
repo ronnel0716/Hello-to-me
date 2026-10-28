@@ -33,7 +33,20 @@ node --test printflow/quote.test.mjs
 
 Open **http://127.0.0.1:8080/printflow/**. Do not open the HTML as a file: ES modules need HTTP. Stop the server with Ctrl+C. Default quote: two 3 × 4 ft pieces at an illustrative PHP 25/sq ft = **PHP 600**, with a suggested PHP 300 deposit.
 
-## What this demonstrates
+## 3. IT asset inventory checker
+
+Flags missing asset information, duplicate tags/serials and invalid statuses in a CSV export. Produces a readable HTML audit and machine-readable findings without changing the input or scanning devices.
+
+![Actual generated inventory audit](docs/screenshots/asset-audit.png)
+
+```sh
+python asset-check/check_inventory.py asset-check/sample.csv --output-dir output/assets
+python -m unittest discover -s asset-check -p "test_*.py" -v
+```
+
+Python 3.10+, no dependencies. Expected demo: eight records, four flagged records and six findings. See [rules, limits and contribution notes](asset-check/README.md).
+
+## What these samples demonstrate
 
 - Validating business inputs before generating results.
 - Keeping calculation logic separate from the browser interface.

@@ -1,0 +1,9 @@
+asset_tag,device_type,serial_number,assigned_to,location,status
+LT-001,Laptop,SYNTH-L001,Demo User A,Demo Office,active
+LT-002,Laptop,SYNTH-L002,,Demo Office,active
+LT-002,Laptop,SYNTH-L003,Demo User B,Demo Office,active
+PR-001,Printer,SYNTH-P001,,Demo Office,spare
+PC-005,Desktop,,Demo User C,,active
+RT-001,Router,SYNTH-R001,,Demo Lab,unknown
+LT-007,Laptop,SYNTH-L007,Demo User D,Demo Office,active
+PC-008,Desktop,SYNTH-D008,,Demo Storage,retired
